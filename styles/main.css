@@ -9,12 +9,34 @@ html {
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 140%;
-    width: 800px;
+    width: 90%;
+    max-width: 1024px;
     margin: 0 auto;
     border: 3px solid #E75480;
     background-color:rgb(255, 217, 198);
+/* while creating fluid layout width was changed from 800 */
 }
-/* code I wrote for menu  */
+main {
+    width: 83.333%;   /* 800/960 x 100 */
+    padding: 15px 1.5625%; /* 15/960 x 100 */
+}
+/*code for flex-box */
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color:#E75480;
+}
+li {
+    background: #E75480;
+    padding: 15px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color:#ffc68d; 
+}
+/* old code I wrote for menu before using a flexbox  
 #nav_menu ul {
     list-style-type: none;
     position: relative;
@@ -55,8 +77,114 @@ body {
     display: block;
     clear: both;
 }
+*/
+/* the styles for the header */
+header h2 {
+	font-size: 175%;
+	color: #E75480;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #E75480;
+}
+/* the styles for the section */
+section {
+	width: 54.6875%;   /* 525/960 x 100 */
+	float: right;
+	padding: 0 20px 20px 20px;
+}
+section h1 {
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+section h2 {
+	color: #E75480;
+	font-size: 110%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+}
+section li {
+	padding-bottom: .35em;
+}
 
-/* article, aside {margin-bottom: 1em; }
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/* the styles for the aside */
+aside {
+	width: 22.395% ;  /* 215/960 x 100 */
+	float: right;
+	padding: 15px 1.5625%;
+}
+aside h2 {
+	color: #E75480;
+	font-size: 120%;
+	padding: .5em 0 .25em 0;
+}
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #E75480;
+	clear: both;
+    width: 96.875%; /* 930/960 x 100 */
+    padding: 15px 1.5625%; 
+}
+footer p {
+	text-align: center;
+	color: #f8E0C8;
+	padding: 1em 0;
+}
+@media only screen and (width >= 574px) {
+    section.home, aside.home {
+        float: none; 
+        width: 100%;
+    }
+}
+/*queries still confuse me a bit but I did the width check so hopefully I did this right*/
+
+
+/*This was my first attempt but it got messed up so I commented it out but left it to reference it 
+ article, aside {margin-bottom: 1em; }
 p {font-size: .875em; }
 header { width: 100%; }
 header h2 {
@@ -115,99 +243,3 @@ footer p {
         width: 100%;
     }
 } */
-
-/* the styles for the header */
-header h2 {
-	font-size: 175%;
-	color: #E75480;
-}
-header h3 {
-	font-size: 130%;
-	font-style: italic;
-}
-header img {
-	float: left;
-	padding: 0 30px;
-}
-.shadow {
-	text-shadow: 2px 2px 2px #E75480;
-}
-/* the styles for the section */
-section {
-	width: 525px;
-	float: right;
-	padding: 0 20px 20px 20px;
-}
-section h1 {
-	font-size: 150%;
-	padding: .5em 0 .25em 0;
-	margin: 0;
-}
-section h2 {
-	color: #E75480;
-	font-size: 110%;
-	padding: .5em 0 .25em 0;
-}
-section p {
-	padding-bottom: .5em;
-}
-section blockquote {
-	padding: 0 2em;
-	font-style: italic;
-}
-section ul {
-	padding: 0 0 .25em 1.25em;
-}
-section li {
-	padding-bottom: .35em;
-}
-
-/* the styles for the article */
-article {
-	padding: .5em 0;
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
-}
-article h2 {
-	padding-top: 0;
-}
-article h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-article img {
-	float: right;
-	margin: .5em 0 1em 1em;
-	border: 1px solid black;
-}
-
-/* the styles for the aside */
-aside {
-	width: 215px;
-	float: right;
-	padding: 0 0 20px 20px;
-}
-aside h2 {
-	color: #E75480;
-	font-size: 120%;
-	padding: .5em 0 .25em 0;
-}
-aside h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-aside img {
-	padding-bottom: 1em;
-}
-
-/* the styles for the footer */
-footer {
-	background-color: #E75480;
-	clear: both;
-
-}
-footer p {
-	text-align: center;
-	color: #f8E0C8;
-	padding: 1em 0;
-}
