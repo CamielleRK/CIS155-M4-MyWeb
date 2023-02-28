@@ -9,15 +9,15 @@ html {
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 140%;
-    width: 90%;
-    max-width: 1024px;
+    width: 100%;
+    max-width: 1200px;   /*1024px */
     margin: 0 auto;
     border: 3px solid #E75480;
     background-color:rgb(255, 217, 198);
 /* while creating fluid layout width was changed from 800 */
 }
 main {
-    width: 83.333%;   /* 800/960 x 100 */
+    width: 83.333%;   /* 83.333% -- 800/960 x 100 */
     padding: 15px 1.5625%; /* 15/960 x 100 */
 }
 /*code for flex-box */
@@ -36,49 +36,6 @@ a {
     text-decoration: none;
     color:#ffc68d; 
 }
-/* old code I wrote for menu before using a flexbox  
-#nav_menu ul {
-    list-style-type: none;
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-#nav_menu ul li { 
-	float: left; 
-	text-align: center;
-	display: block;
-	width: 25%;
-	padding: 1em 0;
-	text-decoration: none;
-	background-color: #E75480;
-}
-#nav_menu ul li a {
-    text-decoration: none; 
-    color: rgb(255, 217, 198);
-    font-weight: bold; 
-}
-#nav_menu ul ul {
-    display: none;
-    position: absolute;
-    top: 100%; 
-}
-#nav_menu ul ul li { float: none; }
-#nav_menu ul li:hover > ul {
-    display: block; }
-#nav_menu ul li.lastitem a {
-	width: 178px; 
-}
-#nav_menu ul li a.current {
-	color: rgb(255, 245, 226); 
-}
-#nav_menu ul li a:hover, #nav_menu ul li a:focus {background-color: #800000; }
-#nav_menu > ul::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-*/
-/* the styles for the header */
 header h2 {
 	font-size: 175%;
 	color: #E75480;
@@ -96,9 +53,9 @@ header img {
 }
 /* the styles for the section */
 section {
-	width: 54.6875%;   /* 525/960 x 100 */
+	width: 70%;   /* 54.6875% -- 525/960 x 100 */
 	float: right;
-	padding: 0 20px 20px 20px;
+	padding: 0 10px 10px 10px;                /*0 20px 20px 20px */
 }
 section h1 {
 	font-size: 130%;
@@ -109,6 +66,7 @@ section h2 {
 	color: #E75480;
 	font-size: 110%;
 	padding: .5em 0 .25em 0;
+	clear: both;
 }
 section p {
 	padding-bottom: .5em;
@@ -181,65 +139,3 @@ footer p {
     }
 }
 /*queries still confuse me a bit but I did the width check so hopefully I did this right*/
-
-
-/*This was my first attempt but it got messed up so I commented it out but left it to reference it 
- article, aside {margin-bottom: 1em; }
-p {font-size: .875em; }
-header { width: 100%; }
-header h2 {
-    font-size: 90%;
-    color: #E75480;
-    text-align: center;
-    margin-left: 12.12121%; 
-}
-header h3 {
-    font-size: 70%;
-    font-style: italic;
-    margin-left: 12.12121%;
-}
-header img{ 
-    width: 8.0808%; 
-    max-width: 80px;
-    min-width: 40px;
-    float: left; 
-    margin-left: 2.0202%;  
-}
-
-section.home img {
-    max-width: 100%; 
-    min-width: 150px; 
-} 
-main li {
-    color:#E75480;
-}
-article {
-    width: 54.0404%;
-    float: left;
-    margin-left: 2.0202%;
-    padding: 1.5em 2.52525% 0 0;
-}
-article h1 {font-size: 1.625em; }
-article img {max-width: 100%; }
-aside {
-    width: 35.35353%;
-    float: left;
-    padding: 2.0202%;
-    background-color: #ffebc6 
-    margin: 1.5em 2.0202% 0 0; 
-}
-aside h2 {font-size: 1.25em; }
-aside li {font-size: .875em; }
-footer { width: 98.875%; }
-footer p {
-    font-size: .75em;
-    text-align: right;
-    margin-right: 2.0202%;
-}
-#copyright { font-size: 60%; }
-@media only screen and (width <= 850px) {
-    section.home, aside.home {
-        float: none; 
-        width: 100%;
-    }
-} */

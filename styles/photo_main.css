@@ -1,0 +1,164 @@
+{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #f8E0C8; 
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 140%;
+    width: 100%;
+    max-width: 1200px;   /*1024px */
+    margin: 0 auto;
+    border: 3px solid #E75480;
+    background-color:rgb(255, 217, 198);
+/* while creating fluid layout width was changed from 800 */
+}
+main {
+    width: 95%;   /* 83.333% -- 800/960 x 100 */
+    padding: 15px 1.5625%; /* 15/960 x 100 */
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color:#E75480;
+}
+li {
+    background: #E75480;
+    padding: 15px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color:#ffc68d; 
+}
+header h2 {
+	font-size: 175%;
+	color: #E75480;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #E75480;
+}
+
+div {
+    color: rgb(255,217,198); 
+    text-align: center;
+}
+
+div img {
+    padding: 20px 20px 20px 20px;
+    width: 85%;
+    
+}
+
+main{
+    height: 1800px;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+    grid-gap: 20px 30px;
+}
+#AA{
+    background-color: white;
+}
+
+#AB{
+    background-color: white;
+}
+
+#AC{
+    background-color: white;
+}
+
+#AD{
+    background-color: white;
+}
+
+#BA{
+    background-color: white;
+}
+
+#BB{
+    background-color: white;
+}
+
+#BC{
+    background-color: white;
+}
+
+#BD{
+    background-color: white;
+}
+
+#CA{
+    background-color: white;
+}
+
+#CB{
+    background-color: white;
+}
+
+#CC{
+    background-color: white;
+}
+
+#CD{
+    background-color: white;
+}
+
+#DA{
+    background-color: white;
+}
+
+#DB{
+    background-color: white;
+}
+
+#DC{
+    background-color: white;
+}
+
+#DD{
+    background-color: white;
+}
+
+#EA{
+    background-color: white;
+}
+
+#EB{
+    background-color: white;
+}
+
+#EC{
+    background-color: white;
+}
+
+#ED{
+    background-color: white;
+}
+#FA{
+    background-color: white;
+}
+
+#FB{
+    background-color: white;
+}
+
+#FC{
+    background-color: white;
+}
+
+#FD{
+    background-color: white;
+}
