@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
-
 html {
     background-color: #f8E0C8; 
+}
+@font-face {
+	font-family: TypeWriter;
+	src: url("atwriter.ttf");
 }
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -26,6 +29,7 @@ ul {
     justify-content: space-between;
     list-style-type: none;
     background-color:#E75480;
+	font-family: TypeWriter;
 }
 li {
     background: #E75480;
@@ -58,12 +62,14 @@ section {
 	padding: 0 10px 10px 10px;                /*0 20px 20px 20px */
 }
 section h1 {
+	font-family: TypeWriter;
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 	margin: 0;
 }
 section h2 {
 	color: #E75480;
+	font-family: TypeWriter;
 	font-size: 110%;
 	padding: .5em 0 .25em 0;
 	clear: both;
@@ -131,6 +137,13 @@ footer p {
 	text-align: center;
 	color: #f8E0C8;
 	padding: 1em 0;
+}
+footer h3 {
+	text-align: center;
+	color:#ffc68d; 
+}
+footer ul {
+	color:#f8E0C8; 
 }
 @media only screen and (width >= 574px) {
     section.home, aside.home {
