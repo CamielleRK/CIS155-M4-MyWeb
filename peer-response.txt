@@ -1,13 +1,13 @@
 I am adding my own ideas for improvements because I did not recieve peer suggestions. 
 
 X fix the redbubble link so it opens in a new tab 
-- create a resource page for people interested in art using numbered lines  
-- 
--
+X create a resource page for people interested in art using numbered lines  
+X make a list of things to do for starting art projects 
+X fix links so they are easier to see per peer request  
 
 List of other requirements and extra credit 
-- add or use a new font 
-- use one or more icons on your website from a service like fontawesome 
-- add a favicon to your website that is appropriate for the purpose of your webpage 
-- Add a table to your website 
-- add a comment to your submission so it indicates 
+X add or use a new font 
+X use one or more icons on your website from a service like fontawesome 
+X add a favicon to your website that is appropriate for the purpose of your webpage 
+X Add a table to your website 
+X add comments to your submission so it indicates changes
