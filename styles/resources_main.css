@@ -14,31 +14,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 nav 	{ grid-row: 1 / 2; grid-column: 1 / 4; }
-header 	{ grid-row: 2 / 4; grid-column: 1 / 2; }
-#s1 	{ grid-row: 2 / 3; grid-column: 2 / 4; }
-#s2 	{ grid-row: 3 / 4; grid-column: 2 / 3;
-background-color: antiquewhite;
-text-align: center;
-}
-#s3 	{ grid-row: 3 / 4; grid-column: 3 / 4; 
-background-color: #E75480;
-}
-footer 	{ grid-row: 4 / 5; grid-column: 1 / 4; }
-header h2 {
-	font-size: 175%;
-	color: #E75480;
-}
-header h3 {
-	font-size: 130%;
-	font-style: italic; }
-a {
-        text-decoration: none;
-        color:#ffc68d; }
-h2 {
-    color: #E75480;
-    font-family: TypeWriter; 
-}
-/*code for flex-box */
+/*code for flex-box which is the navigation bar */
 ul {
     display: flex;
     justify-content: space-between;
@@ -51,23 +27,94 @@ li {
     text-align: left;
     font-size: 150%;
 }
-header {
-
+a {
+    text-decoration: none;
+    color:#ffc68d; }
+h2 {
+color: #E75480;
+font-family: TypeWriter; 
 }
-/* Followed the instructions in the book but its not cooperating, not sure why */ 
+
+/*side column being used to show some art to compliment the topic*/
+header 	{ 
+    grid-row: 2 / 4; grid-column: 1 / 2; 
+    text-align: center;
+}
+
+
+
+/*Steps of an Artist section*/
+#s1 	{ 
+    grid-row: 2 / 3; grid-column: 2 / 4; 
+}
+
+
+
+/*Great photographers to learn from*/
+#s2 	{ 
+grid-row: 3 / 4; grid-column: 2 / 3;
+background-color: antiquewhite;
+text-align: center;
+}
+
+/*List of other artists*/
+#s3 	{ 
+grid-row: 3 / 4; grid-column: 3 / 4; 
+background-color: #E75480;
+text-align: center;
+}
+#s3 h2 {
+    color:#ffc68d
+}
+
+footer 	{ 
+grid-row: 4 / 5; grid-column: 1 / 4; 
+color: #E75480;
+}
+
+
+
+/* Followed the instructions in the book but its not cooperating, not sure why */
 #s2 table{
-    border:1px #E75480;
-    border-collapse: collapse; }
-#s2 th, td {
-    border:1px #E75480;
+    border: 5px #E75480;
+}
+
+#s2 td, th {
     padding: .2em .7em;
-    text-align: center; }
+    text-align: center; 
+}
+
 #s2 th.left, #s2 td.left {text-align: left; }
 #s2 thead {background-color: antiquewhite;}
 
+/* code for S3 */ 
+#s3 ul {}
+
+/* the styles for the footer */
+/*added icons from fontawesome to the footer */
 footer {
+	background-color: #E75480;
+	clear: both;
+    width: 96.875%; /* 930/960 x 100 */
+    padding: 15px 1.5625%; 
+}
+footer p {
+	text-align: center;
+	color: #f8E0C8;
+	padding: 1em 0; 
     background-color: #E75480;
-    font-family: TypeWriter;
-    color:#ffc68d; 
-    text-align: center; 
+}
+footer h3 {
+	text-align: center;
+	color:#ffc68d; 
+}
+footer ul {
+	color:#f8E0C8;   
+}
+@media only screen and (width <= 574px) {
+    body {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
 }
